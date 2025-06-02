@@ -1,0 +1,55 @@
+import React from "react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Sparkles, Clock, Gem } from "lucide-react";
+
+export default function KomanisiLegacy() {
+  return (
+    <div className="min-h-screen bg-black text-white px-6 py-10 font-sans">
+      <header className="text-center mb-12">
+        <h1 className="text-5xl font-bold tracking-wide mb-2">Komanisi Legacy</h1>
+        <p className="text-lg text-gray-400">Timeless Elegance. Eternal Legacy.</p>
+      </header>
+
+      <section className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+        <Card className="bg-gray-900 text-white">
+          <CardContent className="p-6 text-center">
+            <Clock className="mx-auto mb-4 w-10 h-10 text-yellow-500" />
+            <h2 className="text-xl font-semibold mb-2">Precision Timekeeping</h2>
+            <p className="text-gray-400">Every second counts. Experience Swiss-level accuracy in every Komanisi Legacy watch.</p>
+          </CardContent>
+        </Card>
+
+        <Card className="bg-gray-900 text-white">
+          <CardContent className="p-6 text-center">
+            <Gem className="mx-auto mb-4 w-10 h-10 text-pink-500" />
+            <h2 className="text-xl font-semibold mb-2">Luxury in Every Detail</h2>
+            <p className="text-gray-400">Crafted with the finest materials to deliver beauty that never fades.</p>
+          </CardContent>
+        </Card>
+
+        <Card className="bg-gray-900 text-white">
+          <CardContent className="p-6 text-center">
+            <Sparkles className="mx-auto mb-4 w-10 h-10 text-blue-400" />
+            <h2 className="text-xl font-semibold mb-2">Leave a Legacy</h2>
+            <p className="text-gray-400">More than a watch—it's a story passed from generation to generation.</p>
+          </CardContent>
+        </Card>
+      </section>
+
+      <section className="text-center mb-20">
+        <h2 className="text-3xl font-bold mb-4">Our Collection</h2>
+        <p className="text-gray-400 max-w-xl mx-auto mb-6">
+          Explore the Komanisi Legacy collection — from elegant classics to modern masterpieces.
+        </p>
+        <Button className="bg-yellow-500 hover:bg-yellow-600 text-black text-lg px-6 py-2 rounded-full">
+          Shop Now
+        </Button>
+      </section>
+
+      <footer className="text-center text-gray-600 text-sm border-t border-gray-800 pt-6">
+        &copy; {new Date().getFullYear()} Komanisi Legacy. All rights reserved.
+      </footer>
+    </div>
+  );
+}
